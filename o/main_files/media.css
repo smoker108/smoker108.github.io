@@ -1,0 +1,630 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@media only screen and (max-width : 1170px) {
+
+.banner img{
+	width:100%;
+	height:auto;
+}
+
+.loginSec{
+	width:60%;
+	}
+
+.quickHelpSec{
+	width:37%;
+	}
+
+.keyboard img{
+	width:100%;
+	max-width:400px;
+	height:auto;
+	}
+
+.aboutSecyrity{
+	width:45%;
+	padding-left:10%;
+	}
+
+.securePass{
+	width:30%;
+	padding-left:10%;
+	}
+
+.securePass, .aboutSecyrity{
+	background-size:16%;
+	}
+
+
+} /* 1170 */
+
+
+@media only screen and (max-width : 1024px) {
+
+.loginTabContent form .fieldBase input[type="text"], .loginTabContent form .fieldBase input[type="password"]{
+	width:60%;
+	}
+
+.paymentDetailsCont .otpBox span.otpHeading{
+	display:block;
+	float:none;
+	width:100%;
+	padding-bottom:10px;
+	}
+
+
+/*********  Edited by INT  *********/
+.newUserSec p{ 
+	margin:5px 0;
+}
+.newUserSec p.newUserSecPersonal { 
+	float:left;
+}
+
+.authenticationBox h2 span{
+	display:block;
+}
+
+.loginTabContent form .indusMobileHelp{
+	width: 200px;
+	}
+/*********  Edited by INT  *********/
+
+} /* 1024 */
+
+@media only screen and (max-width : 900px) {
+
+.paymentDetailsBox{
+	margin-bottom:0;
+	}
+
+.loginTabContent form .indusMobileHelp{
+	width: 200px;
+	}
+
+} /* 900 */
+
+@media only screen and (max-width : 800px) {
+
+.paymentSec h2{
+	font-size:30px;
+	line-height:40px;
+	}
+
+.balanceCol{
+	display:block;
+	}
+
+.loginTabContent form .indusMobileHelp{
+	width: 110px;
+	}
+	
+.newUserSec p{
+	padding-left: 7%;
+	}
+
+.newUserSec p.newUserSecPersonal {
+	padding-left: 7%;
+	}
+	
+} /* 800 */
+
+@media only screen and (max-width : 770px) {
+
+.logo{
+	width:165px;
+	margin-top:12px;
+	height:auto;
+	}
+
+.indusnetLogo{
+	width:90px;
+	height:auto;
+	margin-top:14px;
+	}
+
+.securePass, .aboutSecyrity{
+	background-size:16%;
+	}
+
+.otherInfo .wrapper{
+	width:100%;
+	}
+
+.otherInfo .leftPan{
+	width:96%;
+	padding-left:2%;
+	padding-right:2%;
+	padding-bottom:45px;
+	border-bottom:solid 1px #cfcfcf;
+	margin-bottom:45px;
+	}
+
+.otherInfo .leftPan a{
+	width:24%;
+	float:left;
+	background-size:15%!important;
+	padding-left:7%;
+	padding-right:2%;
+	}
+
+.otherInfo .leftPan a:last-of-type{
+	padding-right:0;
+	float:right;
+	}
+
+.otherInfo .midPan, .otherInfo .rightPan{
+	width:40%;
+	margin:0 5%;
+	}
+
+/*********  Edited by INT  *********/
+.footerLeft{
+	float:none;
+}
+/*********  Edited by INT  *********/
+
+
+.footerBtm p{
+	float:none;
+	text-align:center;
+	padding:20px 0 10px;
+	}
+
+.footerBtm img {
+	float:none;
+	margin:0 auto 20px;
+	}
+
+.footerBtm p a{
+	padding:0;
+	margin:0 5px;
+	}
+
+.footerBtm p span{
+	display:block;
+	padding-top:10px;
+	}
+
+.paymentDetailsCont br{
+	display:none;
+	}
+
+h2.welcomeHeading{
+	font-size:24px;
+	line-height:30px;
+	}
+
+.tNo{
+	position:relative;
+	width:22px;
+	height:22px;
+	display:block;
+	background:url(../images/phone-icon.png) no-repeat 50% 50%;
+	margin-top:15px;
+	margin-right:15px;
+	}
+
+.tNo span.tollfree{
+	position:absolute;
+	right:-80px;
+	float:none;
+	top:22px;
+	width:200px;
+	background:rgba(0, 0, 0, 0.8);
+	border-radius:5px;
+	padding:8px 0;
+	z-index:99999;
+	font-size:13px;
+	line-height:20px!important;
+	text-align:center;
+	display:none;
+	}
+
+.tNo span.tollfree{
+	display:none;
+	}
+
+.tNo span.tollfree span{
+	padding:0;
+	float:none;
+	line-height:17px!important;
+	}
+
+.tNo:hover span.tollfree{
+	display:block;
+	}
+
+
+/*********  Edited by INT  *********/	
+.adBanner .bx-controls{ 
+	margin-top:10px;
+}
+.adBanner .bx-wrapper .bx-controls-direction a{
+	margin:0 5px;
+	position:static;
+	display:inline-block;
+}
+
+.loginTabContent form .indusMobileHelp{
+	width: 110px;
+	}
+	
+.newUserSec p{
+	padding-left: 7%;
+	}
+
+.newUserSec p.newUserSecPersonal {
+	padding-left: 7%;
+	}
+/*********  Edited by INT  *********/
+
+
+} /* 770 */
+
+@media only screen and (max-width : 700px) {
+
+.loginContent{
+	padding-bottom:10px;
+	}
+
+/*********  Edited by INT  *********/
+.loginSec, .quickHelpSec{
+	margin-bottom:30px;
+	width:100%;
+	/*float:none;*/
+	}
+/*********  Edited by INT  *********/
+
+.quickHelpSec{
+	margin-top:20px;
+	}
+
+.keyboard{
+	margin-bottom:40px;
+	}
+
+.loginTabContent form .fieldBase .info span{
+	left: -180px;
+	top: auto;
+	bottom:30px;
+	}
+
+.vKey{
+	margin:0;
+	}
+
+.paymentDetailsCont .otpOption{
+	width:60%;
+	}
+
+.paymentDetailsCont .otpBox input.otpText{
+	width:90%;
+	padding:0 3%;
+	}
+
+.paymentDetailsCont .otpBox span.otpHeading{
+	font-size:24px;
+	}
+
+.pageContent{
+	padding-top:25px;
+	}
+
+ul.paymentNav{
+	margin-top:0px;
+	}
+
+.loginTabContent form .indusMobileHelp{
+	width: 200px;
+	}
+	
+} /* 700 */
+
+
+@media only screen and (max-width : 600px) {
+
+	#register h2 {
+  font-size: 17px;
+  margin-bottom: 14px;}
+
+.aboutSecyrity, .securePass{
+	width:auto;
+	float:none;
+	padding-left:60px;
+	background-size:40px;
+	border:0;
+	}
+
+.aboutSecyrity{
+	margin-bottom:0;
+	padding-bottom:0;
+	}
+
+.otherInfo .leftPan{
+	padding-bottom:25px;
+	}
+
+.otherInfo .leftPan a, .otherInfo .leftPan a:last-of-type{
+	float:none!important;
+	display:block;
+	width:auto!important;
+	padding-left:60px;
+	background-size:40px!important;
+	height:auto;
+	}
+
+.otherInfo .midPan, .otherInfo .rightPan, .otherInfo .leftPan{
+	float:none;
+	width:auto;
+	padding-left:20px;
+	padding-right:20px;
+	margin-left:0;
+	margin-right:0;
+	}
+
+.otherInfo .rightPan{
+	margin-top:40px;
+	}
+
+/*********  Edited by INT  *********/
+.quickHelpSec{
+	/*width:auto;
+	float:none;
+	padding-left:10px;
+	padding-right:10px;*/
+	}
+
+
+
+/*********  Edited by INT  *********/
+.securityInfo{
+	padding-left:10px;
+	}
+
+ul.paymentNav{
+	width:50%;
+	}
+
+ul.paymentNav li{
+	width:118px;
+	}
+
+.paymentSummeryBox .row, .paymentDetailsContV2 .paymentSummeryBox .row, .paymentDetailsContV2 label.selectBase select, .paymentDetailsContV2 input.remarks{
+	font-size:16px!important;
+	}
+
+.paymentSummeryBox .row{
+	font-size:14px!important;
+	}
+
+.scrollCont{
+	height:auto;
+	}
+
+.loginContent{
+	padding-top:20px;
+	}
+
+h2.welcomeHeading{
+	margin-bottom:0;
+	}
+
+.paymentDetailsCont .otpOption{
+	width:100%;
+	}
+
+.otpBox .radioBase{
+	font-size:14px;
+	padding-top:0;
+	}
+
+.paymentSummeryBox{
+	margin-top:20px;
+	margin-bottom:20px;
+	}
+
+.authenticationBox h2, .authenticationSucess h2, .authenticationFailed h2{
+	margin:0 0 15px 0;
+	font-size:30px;
+	}
+
+.authenticationBox{
+	padding:20px 0;
+	min-height:100px;
+	}
+
+.pageContent{
+	padding-bottom:25px;
+	}
+
+.loginTabContent form .indusMobileHelp{
+	width: 200px;
+	}
+	
+.newUserSec p{
+	padding-left: 5%;
+	}
+
+.newUserSec p.newUserSecPersonal {
+	padding-left: 5%;
+	}
+/******************************************************
+				authentication-part
+******************************************************/
+.otpBox{ margin:30px 0 0 0;}
+.tp-box-sec{ display:block;}
+.tp-left{ display:block; width:100%;}
+.tp-right{ padding-left:30px; display:block; width:100%;}
+
+.transaction-password-sec{ margin-top:10px;}
+
+.one-time-password-sec{ margin-top:20px;}
+.authentication-part a.resend-otp{ float:left;}
+.otp-btn-sec a.otp-on-call{ margin-left:30px; padding-right:20px; float:right;}
+.otp-btn-sec a.otp-on-call .info{ right:0; top:0;}
+.otp-btn-sec a.cancel{ margin-top:20px; width:100%; text-align:center; line-height:1;}
+
+.otpBox .confirmBtn{ margin:10px auto 0;}
+
+} /* 600 */
+
+
+@media only screen and (max-width : 530px) {
+
+.logo{
+	width:150px;
+	margin-top:15px;
+	height:auto;
+	margin-bottom:0;
+	}
+
+.indusnetLogo{
+	width:70px;
+	height:auto;
+	margin-top:16px;
+	margin-bottom:5px;
+	}
+
+.pageHeader .wrapper{
+	font-size:11px;
+	line-height:19px;
+	}
+
+.loginTabContent form .indusMobileHelp{
+	width: 110px;
+	}
+	
+.newUserSec p{
+	padding-left: 6%;
+	}
+
+.newUserSec p.newUserSecPersonal {
+	padding-left: 6%;
+	}
+/*.pageHeader span{
+	display:block;
+	float:none;
+	clear:both;
+	text-align:right;
+	}
+
+.pageHeader span span{
+	padding:0 0 0 5px;
+	display:inline-block;
+	}	*/
+
+} /* 530 */
+
+@media only screen and (max-width : 480px) {
+
+.loginTabContent{
+	padding:30px;
+	}
+
+.newUserSec{
+	padding-left:30px;
+	padding-right:30px;
+	}
+
+.loginTab li{
+	padding-left:35px!important;
+	padding-right:35px!important;
+	}
+
+.loginTab li.indusNet{
+	background-image:none!important;
+	}
+
+.loginTab li.indusMob{
+	background:url(../images/new-icon.png) no-repeat 90% 50% #eee5d0 !important;
+	padding-right:65px !important;
+	}
+
+.loginTab li.indusMob.current{
+	background-color:#fff!important;
+	}
+
+.authenticationBox .buttonSec button{
+	margin-bottom:10px;
+	}
+
+.paymentDetailsBox, .paymentDetailsCont input.remarks, .paymentDetailsCont label.selectBase select{
+	font-size:17px;
+	}
+
+.authenticationBox{
+	padding:20px 0 0;
+	min-height:100px;
+	}
+
+.authenticationBox h2{
+	font-size:24px;
+	line-height:30px;
+	}
+
+.loginTabContent form .indusMobileHelp{
+	width: 110px;
+	}
+	
+.newUserSec p{
+	padding-left: 7%;
+	}
+
+.newUserSec p.newUserSecPersonal {
+	padding-left: 7%;
+	}
+
+} /* 480 */
+
+@media only screen and (max-width : 360px) {
+
+.paymentSec h2{
+	font-size:24px;
+	}
+
+.paymentDetailsHeader{
+	padding:15px;
+	line-height:30px;
+	}
+
+.paymentDetailsHeader b{
+	display:block;
+	margin-bottom:10px;
+	}
+
+ul.paymentNav li{
+	font-size:14px;
+	}
+
+.paymentDetailsCont{
+	padding:25px 14px;
+	}
+
+.paymentDetailsContV2 .paymentSummeryBox .row, .paymentDetailsContV2 label.selectBase select, .paymentDetailsContV2 input.remarks{
+	font-size:13px!important;
+
+}
+
+
+/*********  Edited by INT  *********/
+.loginTab li{ 
+	padding:15px !important;
+}
+/*********  Edited by INT  *********/
+
+.loginTabContent form .indusMobileHelp{
+	width: 110px;
+	}
+
+.newUserSec p{
+	padding-left: 8%;
+	}
+
+.newUserSec p.newUserSecPersonal {
+	padding-left: 8%;
+	}
+	
+}
