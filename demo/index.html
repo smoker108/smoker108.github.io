@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>OTDS | On Time Delivery Service</title>
+       <style>
+           .subscribe {
+  padding-block: 5rem;
+  background-color: var(--primary-color-dark);
+}
+
+.subscribe__container {
+  display: grid;
+  gap: 2rem;
+  text-align: center;
+}
+
+.subscribe__container h2 {
+  color: var(--white);
+}
+
+.subscribe__container p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 200;
+  font-family: var(--header-font);
+  line-height: 1.75rem;
+  color: var(--white);
+}
+
+.subscribe__container form {
+  width: 100%;
+  max-width: 450px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+}
+
+.subscribe__container input {
+  width: 100%;
+  padding-inline: 1rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+           .header__container p{
+               z-index: 9999;
+           }
+           .header__container img{
+               z-index: -1;
+               opacity: 0.2;
+           }
+        .styled-div {
+             background-color: red;
+            color: white;
+            padding: 20px;
+            border-radius: 45px;
+            text-align: center;
+            max-width: 300px; /* Adjust the width as needed */
+            margin: 0 auto; /* Center the div horizontally */
+        }
+           .styled-div h4{
+               color: aliceblue;
+           }
+            .styled-div h5{
+               color: aliceblue;
+           }
+            .styled-text {
+            max-width: 600px; /* Adjust the width as needed */
+            margin: 0 auto; /* Center the div horizontally */
+            line-height: 1.6; /* Adjust line height for better readability */
+        }
+        .styled-text p {
+            margin-bottom: 1em; /* Space between paragraphs */
+        }
+           .logo img{
+               width: auto;
+               height: 100px;
+           }
+            @media only screen and (max-width: 600px) {
+            .logo img{
+                height: 50px;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#" class="logo"><img src="assets/RONY LOGO HD png.png"><span></span></a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#client">Admin</a></li>
+        <li><a href="#track" class="btn">TRACK</a></li>
+      </ul>
+    </nav>
+    <header class="section__container header__container" id="home">
+      <img src="assets/Red-Ball.png" alt="header" />
+      <img src="assets/Red-Ball.png" alt="header" />
+      <img src="assets/Red-Ball.png" alt="header" />
+      <img src="assets/Red-Ball.png" alt="header" />
+      <img src="assets/Red-Ball.png" alt="header" />
+      <img src="assets/Red-Ball.png" alt="header" />
+      <h2>
+        <img src="assets/bag.png" alt="bag" />
+        Trust builds value; value earns trust.
+      </h2>
+      <h1>About the <br /><span>Company</span></h1>
+      <p>
+         OTDS is a leading delivery service provider that specializes in providing
+ efficient and reliable delivery services to our customers. We have been
+ serving the community for years and we have established ourselves as a
+ trusted and reliable courier service.<br><br>
+           Our services include Ecommerce, First Mile, Last Mile, Door to Door
+ Pickup and Delivery. We provide same day delivery within 24 hours to
+ ensure our customers receive their packages on time. We have a team
+ of highly skilled professionals who are dedicated to providing the best
+ customer service to our clients.
+      </p>
+      <div class="header__btns">
+        <button class="btn">Browse Info.</button>
+        <a href="#">
+          <span><i class="ri-play-fill"></i></span>
+          How It Works?
+        </a>
+      </div>
+    </header>
+
+    <section class="steps" id="about">
+      <div class="section__container steps__container">
+        <h2 class="section__header">
+         Company <br> <span>Vison & Mission</span>
+        </h2>
+        <p class="section__description">
+          Follow Our Simple, Step-by-Step Guide to Quickly Land Your Dream Job
+          and Start Your New Career Journey.
+        </p>
+        <div class="steps__grid">
+          <div class="steps__card">
+            <span><i class="ri-search-fill"></i></span>
+            <h4>Vision</h4>
+            <p>
+              Our vision is to become the leading
+ courier service provider in the industry by
+ delivering exceptional services to our
+ customers. We strive to achieve this by
+ constantly improving our services and
+ embracing new technologies that enhance
+ our efficiency and effectiveness.
+            </p>
+          </div>
+          <div class="steps__card">
+            <span><i class="ri-file-paper-fill"></i></span>
+            <h4>Mission</h4>
+            <p>
+               At OTDS, our mission is to provide efficient,
+ reliable and cost-effective delivery services to
+ our customers. We strive to exceed our
+ customer’s expectations by providing timely
+ and accurate deliveries while maintaining the
+ highest level of professionalism.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container explore__container" id="service">
+      <h2 class="section__header">
+        <span>OUR</span>  SERVICES
+      </h2>
+      <p class="section__description">
+        Discover a World of Exciting Opportunities and Endless Possibilities,
+        and Find the Perfect Career Path to Shape Your Future.
+      </p>
+      <div class="explore__grid">
+        <div class="explore__card">
+          <span><i class="ri-shopping-bag-fill"></i></span>
+          <h4>Ecommerce Delivery</h4>
+          <p>We provide efficient and reliable delivery services for ecommerce
+ businesses. Our ecommerce delivery services are designed to ensure
+ that your products are delivered to your customers on time and in
+ excellent condition.</p>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-bar-chart-box-fill"></i></span>
+          <h4>First Mile Delivery</h4>
+          <p> Our First Mile delivery service involves the collection of goods from the
+ point of origin, whether it is a warehouse or a store. We ensure that the
+ collection is done in a timely and professional manner, and that the
+ goods are properly secured for transport.</p>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-megaphone-fill"></i></span>
+          <h4>Last Mile Delivery</h4>
+          <p>Our Last Mile delivery service involves the delivery of goods to their final
+ destination. This service is ideal for businesses that require delivery of
+ products to their customers' homes or offices.</p>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-box-3-fill"></i></span>
+          <h4>Door to Door Pickup and Delivery</h4>
+          <p> We provide a door to door pickup and delivery service that is designed
+ to make the process of sending and receiving packages as easy as
+ possible for our customers.</p>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-truck-fill"></i></span>
+          <h4>Same Day Delivery</h4>
+          <p> We offer same day delivery within 24 hours for urgent deliveries. This
+ service is ideal for businesses that require urgent delivery of their
+ products.</p>
+        </div>
+        <!--div class="explore__card">
+          <span><i class="ri-computer-fill"></i></span>
+          <h4>Admin</h4>
+          <p>100+ jobs openings</p>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-building-fill"></i></span>
+          <h4>Construction</h4>
+          <p>500+ jobs openings</p>
+        </div--->
+      </div>
+      <div class="explore__btn">
+        <button class="btn">View All Categories</button>
+      </div>
+    </section>
+
+    <!---------section class="section__container job__container" id="job">
+      <h2 class="section__header"><span>Latest & Top</span> Job Openings</h2>
+      <p class="section__description">
+        Discover Exciting New Opportunities and High-Demand Positions Available
+        Now in Top Industries and Companies
+      </p>
+
+      <div class="job__grid">
+        <div class="job__card">
+          <div class="job__card__header">
+            <img src="assets/figma.png" alt="job" />
+            <div>
+              <h5>Figma</h5>
+              <h6>USA</h6>
+            </div>
+          </div>
+          <h4>Senior Product Engineer</h4>
+          <p>
+            Lead the development of innovative product solutions, leveraging
+            your expertise in engineering and product management to drive
+            success.
+          </p>
+          <div class="job__card__footer">
+            <span>12 Positions</span>
+            <span>Full Time</span>
+            <span>$1,45,000/Year</span>
+          </div>
+        </div>
+        <div class="job__card">
+          <div class="job__card__header">
+            <img src="assets/google.png" alt="job" />
+            <div>
+              <h5>Google</h5>
+              <h6>USA</h6>
+            </div>
+          </div>
+          <h4>Project Manager</h4>
+          <p>
+            Manage project timelines and budgets to ensure successful delivery
+            of projects on schedule, while maintaining clear communication with
+            stakeholders.
+          </p>
+          <div class="job__card__footer">
+            <span>2 Positions</span>
+            <span>Full Time</span>
+            <span>$95,000/Year</span>
+          </div>
+        </div>
+        <div class="job__card">
+          <div class="job__card__header">
+            <img src="assets/linkedin.png" alt="job" />
+            <div>
+              <h5>LinkedIn</h5>
+              <h6>Germany</h6>
+            </div>
+          </div>
+          <h4>Full Stack Developer</h4>
+          <p>
+            Develop and maintain both front-end and back-end components of web
+            applications, utilizing a wide range of programming languages and
+            frameworks.
+          </p>
+          <div class="job__card__footer">
+            <span>10 Positions</span>
+            <span>Full Time</span>
+            <span>$35,000/Year</span>
+          </div>
+        </div>
+        <div class="job__card">
+          <div class="job__card__header">
+            <img src="assets/amazon.png" alt="job" />
+            <div>
+              <h5>Amazon</h5>
+              <h6>USA</h6>
+            </div>
+          </div>
+          <h4>Front-end Developer</h4>
+          <p>
+            Design and implement user interfaces using HTML, CSS, and
+            JavaScript, collaborating closely with designers and back-end
+            developers.
+          </p>
+          <div class="job__card__footer">
+            <span>20 Positions</span>
+            <span>Full Time</span>
+            <span>$1,01,000/Year</span>
+          </div>
+        </div>
+        <div class="job__card">
+          <div class="job__card__header">
+            <img src="assets/twitter.png" alt="job" />
+            <div>
+              <h5>Twitter</h5>
+              <h6>USA</h6>
+            </div>
+          </div>
+          <h4>ReactJS Developer</h4>
+          <p>
+            Specialize in building dynamic and interactive user interfaces using
+            the ReactJS library, leveraging your expertise in JavaScript and
+            front-end development.
+          </p>
+          <div class="job__card__footer">
+            <span>6 Positions</span>
+            <span>Full Time</span>
+            <span>$98,000/Year</span>
+          </div>
+        </div>
+        <div class="job__card">
+          <div class="job__card__header">
+            <img src="assets/microsoft.png" alt="job" />
+            <div>
+              <h5>Microsoft</h5>
+              <h6>USA</h6>
+            </div>
+          </div>
+          <h4>Python Developer</h4>
+          <p>
+            Develop scalable and efficient backend systems and applications
+            using Python, utilizing your proficiency in Python programming and
+            software development.
+          </p>
+          <div class="job__card__footer">
+            <span>9 Positions</span>
+            <span>Full Time</span>
+            <span>$80,000/Year</span>
+          </div>
+        </div>
+      </div>
+    </section  -------------->
+
+    <section class="section__container offer__container">
+      <h2 class="section__header">What We <span>Offer</span></h2>
+      <p class="section__description">
+        Explore the Benefits and Services We Provide to Enhance Your Reliability.
+      </p>
+      <div class="offer__grid">
+        <div class="offer__card">
+          <img src="assets/offer-1.jpg" alt="offer" />
+          <div class="offer__details">
+            <span>01</span>
+            <div>
+              <h4>ON TIME DELIVERY</h4>
+              <p>
+                Ready to deliver with percision & punctuality.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="offer__card">
+          <img src="assets/offer-2.jpg" alt="offer" />
+          <div class="offer__details">
+            <span>02</span>
+            <div>
+              <h4>SAFE & SECURE</h4>
+              <p>OUR EXPERIENCED TEAM OF DELIVERY PROFESSIONALS IS DEDICATED TO HANDLING YOUR PACKAGES WITH THE UTMOST CARE AND DELIVERING
+THEM SECURELY AND PROMPTLY.</p>
+            </div>
+          </div>
+        </div>
+        <!--- div class="offer__card">
+          <img src="assets/offer-3.jpg" alt="offer" />
+          <div class="offer__details">
+            <span>03</span>
+            <div>
+              <h4>Career Consultation</h4>
+              <p>Receive expert advice to navigate your career path</p>
+            </div>
+          </div>
+        </div---->
+      </div>
+    </section>
+
+    <section class="section__container client__container" id="client">
+      <h2 class="section__header">What Our <span>Admin Say</span></h2>
+      <p class="section__description">
+        Read Testimonials and Success Stories from Our Satisfied Customers to See How We Make a Difference
+      </p>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="assets/client-1.jpg" alt="client" />
+                <div class="styled-div">
+        <h4>Suwej Farhat</h4>
+        <h5>CEO, Founder & Director</h5>
+    </div><br>
+               <div class="styled-text">
+        <p>With years of experience under in the industry, Suwej assumes the crucial responsibility of overseeing the day-to-day operations of the company, ensuring that all activities align with the company's goals and objectives.</p>
+        
+        <p>Dedicated to delivering exceptional services to our esteemed customers, Suwej's unwavering commitment shines through his strategic leadership. He harbors a genuine passion for leveraging technology to enhance the efficiency and effectiveness of our operations, always striving for continuous improvement.</p>
+        
+        <p>Suwej Farhat's entrepreneurial journey began with the founding of OTDS, where his profound understanding of logistics and supply chain management has been pivotal in driving the company's tremendous success. Through his vision and acumen, OTDS has firmly established itself as a trusted name in the industry, gaining the respect and loyalty of numerous satisfied clients.</p>
+        
+        <p>Overall, Suwej Farhat's remarkable tenure in the courier industry, combined with his strategic foresight and dedication to exceptional service, has been instrumental in shaping OTDS into the thriving enterprise it is today.</p>
+    </div>
+              <div class="client__ratings">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+              </div>
+              
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="assets/client-2.jpg" alt="client" />
+              <p>
+                As a recent graduate, I was unsure where to start my job search.
+                This website guided me through the process step by step. From
+                creating my profile to receiving job offers, everything was
+                seamless. I'm now happily employed thanks to this platform!
+              </p>
+              <div class="client__ratings">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-half-fill"></i></span>
+              </div>
+              <h4>Michael Brown</h4>
+              <h5>Recent Graduate</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="assets/client-3.jpg" alt="client" />
+              <p>
+                Creating an account was a breeze, and I was amazed by the number
+                of job opportunities available. Thanks to this website, I found
+                the perfect position that aligned perfectly with my career
+                goals.
+              </p>
+              <div class="client__ratings">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+              </div>
+              <h4>David Smith</h4>
+              <h5>Software Engineer</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+          <section class="section__container">
+      
+    </section>
+<section class="subscribe">
+      <div class="section__container  offer__container subscribe__container" id="track">
+          <h2 class="section__header">Track Your<span> Parcel</span></h2>
+      <p class="section__description">
+        Enter Ref. No for current status.
+      </p>
+        <div>
+          <form action="/">
+            <input type="text" placeholder="Enter Your Ref. No" />
+            <button class="btn">TRACK</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo"><span style="color: #6132b4;">O</span>TDS</a>
+          </div>
+          <p>
+             Our services include Ecommerce, First Mile, Last Mile, Door to Door
+ Pickup and Delivery.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Follow Us</h4>
+          <ul class="footer__links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Youtube</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="#">
+                <span><i class="ri-phone-fill"></i></span> +91600006406
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-mail-fill"></i></span>  info@otdscourier.in
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 OTDS. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
